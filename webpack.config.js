@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'url';
 import { dirname, join, resolve } from 'path';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 import autoprefixer from 'autoprefixer';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -29,10 +30,7 @@ export default {
             loader: 'postcss-loader',
             options: {
               postcssOptions: {
-                plugins: [
-                  'tailwindcss',
-                  autoprefixer,
-                ],
+                plugins: ['tailwindcss', autoprefixer],
               },
             },
           },
@@ -43,6 +41,10 @@ export default {
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'styles.css',
+    }),
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+      filename: 'index.html',
     }),
   ],
 };
