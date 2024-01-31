@@ -3,6 +3,7 @@ import { dirname, join, resolve } from 'path';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 import autoprefixer from 'autoprefixer';
+import CopyWebpackPlugin from 'copy-webpack-plugin';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -45,6 +46,14 @@ export default {
     new HtmlWebpackPlugin({
       template: 'src/index.html',
       filename: 'index.html',
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: 'src/img',
+          to: 'imgs',
+        },
+      ],
     }),
   ],
 };
