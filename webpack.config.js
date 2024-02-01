@@ -51,7 +51,7 @@ export default {
       patterns: [
         {
           from: 'src/img',
-          to: 'imgs',
+          to: 'img',
         },
       ],
     }),
