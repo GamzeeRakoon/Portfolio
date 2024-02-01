@@ -12,7 +12,7 @@
 
 <body>
     <header id="home">
-        <nav class="navbar bg-base-100 fixed z-50">
+        <nav class="fixed z-50 navbar bg-base-100">
             <div class="flex-1">
                 <div class="">
                     <div tabindex="0" class="btn btn-ghost btn-circle avatar">
@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div class="flex-none">
-                <ul class="menu menu-horizontal px-1">
+                <ul class="px-1 menu menu-horizontal">
                     <li><a href="#home" class="cursor-pointer hover:text-gray-400">Home</a></li>
                     <li><a href="#aboutMe" class="cursor-pointer hover:text-gray-400">About me</a></li>
                     <li><a href="#projects" class="cursor-pointer hover:text-gray-400">Projects</a></li>
@@ -47,8 +47,8 @@
         </section>
 
         <section id="aboutMe">
-            <div class="hero min-h-screen bg-base-200">
-                <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="min-h-screen hero bg-base-200">
+                <div class="flex-col hero-content lg:flex-row-reverse">
                     <img alt="cool picture" src="./img/tux.png"
                         class="max-w-sm rounded-lg shadow-2xl">
                     <div>
@@ -83,54 +83,54 @@
             </div>
         </section>
 
-        <section id="projects" class="flex items-center justify-center min-h-screen ">
+        <section id="projects" class="flex justify-center items-center min-h-screen">
                 <div class="container mx-auto my-8">
-                    <h1 class="text-5xl font-bold pb-10 text-center">Projects</h1>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
-                        <div class="card w-96 bg-base-200 shadow-xl place-items-center border-b-5 border-red-50">
-                            <figure class="overflow-hidden bg-base-100 w-full">
+                    <h1 class="pb-10 text-5xl font-bold text-center">Projects</h1>
+                    <div class="grid grid-cols-1 gap-4 place-items-center lg:grid-cols-2 md:grid-cols-1">
+                        <div class="place-items-center w-96 border-red-50 shadow-xl card bg-base-200 border-b-5">
+                            <figure class="overflow-hidden w-full bg-base-100">
                                 <img src="./img/goblin.png" alt="Goblin icon">
                             </figure>
                             <div class="card-body">
-                                <h2 class="card-title font-bold">Goblinflix</h2>
+                                <h2 class="font-bold card-title">Goblinflix</h2>
                                 <p>
                                     React webapp that uses the TMDB API to
                                     look for movies, their trailers
                                     displayed in a streaming service type front-end
                                 </p>
-                                <div class="card-actions justify-end">
+                                <div class="justify-end card-actions">
                                     <a type="button" class="btn btn-secondary"
                                         href="https://github.com/GamzeeRakoon/goblinflix">Source</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card w-96 bg-base-200 shadow-xl place-items-center border-b-5 border-red-50">
+                        <div class="place-items-center w-96 border-red-50 shadow-xl card bg-base-200 border-b-5">
                             <figure class="overflow-hidden bg-base-100">
                                 <img src="./img/php_logo.png" alt="PHP Logo">
                             </figure>
                             <div class="card-body">
-                                <h2 class="card-title font-bold">Blog PHP</h2>
+                                <h2 class="font-bold card-title">Blog PHP</h2>
                                 <p>
                                     A PHP blog website written in pure PHP and MySQL
                                 </p>
-                                <div class="card-actions justify-end">
+                                <div class="justify-end card-actions">
                                     <a type="button" class="btn btn-secondary"
                                         href="https://github.com/GamzeeRakoon/blog-php">Source</a>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card w-96 bg-base-200 shadow-xl place-items-center border-b-5 border-red-50">
+                        <div class="place-items-center w-96 border-red-50 shadow-xl card bg-base-200 border-b-5">
                             <figure class="overflow-hidden bg-base-100">
                                 <img src="./img/laravel_logo.png" alt="Laravel Logo">
                             </figure>
                             <div class="card-body">
-                                <h2 class="card-title font-bold">Blog PHP</h2>
+                                <h2 class="font-bold card-title">Blog PHP</h2>
                                 <p>
                                     A PHP blog website written in pure PHP and MySQL
                                 </p>
-                                <div class="card-actions justify-end">
+                                <div class="justify-end card-actions">
                                     <a type="button" class="btn btn-secondary"
                                         href="https://github.com/GamzeeRakoon/blog-php">Source</a>
                                 </div>
@@ -140,9 +140,9 @@
                 </div>
         </section>
 
-        <section class="flex items-center justify-center min-h-screen bg-base-200">
+        <section class="flex justify-center items-center min-h-screen bg-base-200">
             <div id="contact" >
-                <h1 class="text-5xl font-bold pb-10 text-center">contact</h1>
+                <h1 class="pb-10 text-5xl font-bold text-center">contact</h1>
                 <div class="overflow-x-auto">
                     <table class="table">
                       <tbody>
