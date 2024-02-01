@@ -26,6 +26,7 @@
                 <ul class="px-1 menu menu-horizontal">
                     <li><a href="#home" class="cursor-pointer hover:text-gray-400">Home</a></li>
                     <li><a href="#aboutMe" class="cursor-pointer hover:text-gray-400">About me</a></li>
+                    <li><a href="#skills" class="cursor-pointer hover:text-gray-400">Skills</a></li>
                     <li><a href="#projects" class="cursor-pointer hover:text-gray-400">Projects</a></li>
                     <li><a href="#contact" class="cursor-pointer hover:text-gray-400">Contact</a></li>
                 </ul>
@@ -83,11 +84,64 @@
             </div>
         </section>
 
+        <section id="skills" class="flex justify-center items-center min-h-screen">
+            <div class="container mx-auto my-8">
+                <h1 class="pb-10 text-5xl font-bold text-center">Skills</h1>
+                <div class="flex justify-center">
+                    <div class="flex flex-col gap-4 w-">
+                        <div class="flex flex-row">
+                            <div class="grid flex-grow place-items-center px-20 h-20 card bg-base-300 rounded-box">
+                                <h2 class="text-center card-title">JS</h2>
+                            </div>
+                            <div class="divider divider-horizontal"></div>
+                            <div class="grid flex-grow place-items-center h-20 card bg-base-300 rounded-box">
+                                <span class="indicator-item badge badge-secondary">85%</span> 
+                                <progress class="w-56 progress" value="85" max="100"></progress>
+                            </div>
+                        </div>
+
+                        <div class="flex flex-row">
+                            <div class="grid flex-grow place-items-center px-20 h-20 card bg-base-300 rounded-box">
+                                <h2 class="text-center card-title">PHP</h2>
+                            </div>
+                            <div class="divider divider-horizontal"></div>
+                            <div class="grid flex-grow place-items-center h-20 card bg-base-300 rounded-box">
+                                <span class="indicator-item badge badge-secondary">80%</span> 
+                                <progress class="w-56 progress" value="80" max="100"></progress>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-row">
+                            <div class="grid flex-grow place-items-center px-20 h-20 card bg-base-300 rounded-box">
+                                <h2 class="text-center card-title">Laravel</h2>
+                            </div>
+                            <div class="divider divider-horizontal"></div>
+                            <div class="grid flex-grow place-items-center h-20 card bg-base-300 rounded-box">
+                                <span class="indicator-item badge badge-secondary">60%</span> 
+                                <progress class="w-56 progress" value="60" max="100"></progress>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-row">
+                            <div class="grid flex-grow place-items-center px-20 h-20 card bg-base-300 rounded-box">
+                                <h2 class="text-center card-title">React</h2>
+                            </div>
+                            <div class="divider divider-horizontal"></div>
+                            <div class="grid flex-grow place-items-center h-20 card bg-base-300 rounded-box">
+                                <span class="indicator-item badge badge-secondary">65%</span> 
+                                <progress class="w-56 progress" value="65" max="100"></progress>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="projects" class="flex justify-center items-center min-h-screen">
                 <div class="container mx-auto my-8">
                     <h1 class="pb-10 text-5xl font-bold text-center">Projects</h1>
-                    <div class="grid grid-cols-1 gap-4 place-items-center lg:grid-cols-2 md:grid-cols-1 xl:grid-cols-3">
-                        <div class="place-items-center w-96 border-red-50 shadow-xl card bg-base-200 border-b-5">
+                    <div class="grid grid-cols-1 gap-4 place-items-center h-full lg:grid-cols-2 md:grid-cols-1 xl:grid-cols-3">
+                        <div class="place-items-center w-96 h-full border-red-50 shadow-xl card bg-base-200 border-b-5">
                             <figure class="overflow-hidden w-full bg-base-100">
                                 <img src="./img/goblin.png" alt="Goblin icon">
                             </figure>
@@ -121,14 +175,14 @@
                             </div>
                         </div>
 
-                        <div class="place-items-center w-96 border-red-50 shadow-xl card bg-base-200 border-b-5">
+                        <div class="w-96 border-red-50 shadow-xl card bg-base-200 border-b-5">
                             <figure class="overflow-hidden bg-base-100">
                                 <img src="./img/laravel_logo.png" alt="Laravel Logo">
                             </figure>
                             <div class="card-body">
-                                <h2 class="font-bold card-title">Blog PHP</h2>
+                                <h2 class="font-bold card-title">Blog Laravel</h2>
                                 <p>
-                                    A PHP blog website written in pure PHP and MySQL
+                                    A Laravel blog website written
                                 </p>
                                 <div class="justify-end card-actions">
                                     <a type="button" class="btn btn-secondary"
